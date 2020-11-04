@@ -11,9 +11,9 @@ cali = fetch_california_housing()
 
 cali_df = pd.DataFrame(cali.data, columns=cali.feature_names)
 cali_df['MedHouseValue'] = pd.Series(cali.target)           
-#print(cali_df.head())
-cali_df = cali_df.sample(frac = 0.1, random_state = 17)
+
+cali_df = cali_df.sample(frac=0.1, random_state=17)
 
 sns.set(font_scale=1.1)
 sns.set_style('whitegrid')
-grid = sns.pairplot(data=cali_df, vars=cali_df.columns[0:8], hue='MedHouseValue')
+grid = sns.pairplot(data=cali_df, vars=cali_df.columns[0:8], hue='MedHouseValue') 

@@ -30,6 +30,7 @@ plt.tight_layout()
 plt.show()
 
 x_train, x_test, y_train, y_test = train_test_split(digits.data, digits.target, random_state=11)
+#data = x's    and   target = y's
 
 print(x_train.shape) #data (1347, 64)
 print(y_train.shape) #target (1347,0)
