@@ -16,4 +16,5 @@ cali_df = cali_df.sample(frac=0.1, random_state=17)
 
 sns.set(font_scale=1.1)
 sns.set_style('whitegrid')
-grid = sns.pairplot(data=cali_df, vars=cali_df.columns[0:8], hue='MedHouseValue') 
+grid = sns.pairplot(data=cali_df, vars=cali_df.columns[:8], hue='MedHouseValue') 
+plt.show()
