@@ -10,7 +10,6 @@ nyc = pd.read_csv('ave_yearly_temp_nyc_1895-2017.csv')
 x_train, x_test, y_train, y_test = train_test_split(
     nyc.Date.values.reshape(-1,1), nyc.Value.values, random_state=11)
 
-
 lr = LinearRegression()
 
 lr.fit(X=x_train, y=y_train)
