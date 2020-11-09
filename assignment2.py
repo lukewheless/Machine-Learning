@@ -49,8 +49,9 @@ plt.show()
 '''
 When comparing the two regression models we 
 see the high temperatures in January below 40 
-degrees, however, the other model representing December 
+degrees, however, this files model representing December 
 looks to be above 50 degrees over the years with less variation
-along the regression line
+along the regression line. Overall, the average temperature trend seems 
+to increase throughout the year!
 
 '''
