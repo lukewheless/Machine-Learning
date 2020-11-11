@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #Data Frames
-classes =  pd.read_csv("Classes.csv")
+classes =  pd.read_csv("animal_classes.csv", usecols=["Class_Number", "Class_Type"])
 
 train =  pd.read_csv("animals_train.csv")
 
@@ -14,9 +14,13 @@ test =  pd.read_csv("animals_test.csv")
 
 #New Column
 train["Target"] = ["Mammal" if i == 1
-                        "Bird" elif i == 2
-                        "Reptile" elif i == 3
-                        for i in df["class_number"]]
+                    "Bird" elif i == 2
+                    "Reptile" elif i == 3
+                    "Fish" elif i == 4
+                    "Amphibian" elif i == 5
+                    "Bug" elif i == 6
+                    "Invertebrate" elif i == 7
+                    for i in train["Class_Number"]]
 print(train)
 
 x_train, x_test, y_train, y_test = train_test_split(train.Target.values, test.Name.values, random_state=11)
